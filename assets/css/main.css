@@ -3560,7 +3560,7 @@ body {
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg1.jpg");
 			background-size: auto, cover;
 			background-position: center, 0% 30%;
 			margin-bottom: -6.5em;
@@ -4041,10 +4041,10 @@ body {
 	@media screen and (max-width: 1280px) {
 
 		#footer {
-			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, center;
+			background-color: #393F51;
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg1.jpg");
+			background-size: auto, cover;
+			background-position: center, center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
@@ -4098,7 +4098,6 @@ body {
 				#footer .inner .contact {
 					margin: 0 0 3em 0;
 				}
-
 	}
 
 	@media screen and (max-width: 480px) {
@@ -4119,7 +4118,7 @@ body {
 	@media screen and (max-width: 360px) {
 
 		#footer .inner {
-			padding: 2em 1.5em 0.1em 1.5em ;
+			padding: 1em 1.5em 0.1em 1.5em ;
 		}
 
 	}
@@ -4139,17 +4138,17 @@ body {
 	#footer .contact-icons {
 		list-style: none;
 		padding: 0;
-		margin: 2em 0 0 0;
+		margin: 1em 0 0 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center; /* Center the entire list horizontally */
-		gap: 0.75em;
+		gap: 0.3em;
 	}
 
 	#footer .contact-icons li {
 		display: flex;
 		align-items: center; /* Align icon and text */
 		justify-content: flex-start; /* Keep icon + text left-aligned */
-		gap: 0.6em;
+		gap: 0.5em;
 		width: max-content; /* Shrinks to fit content */
 	}
