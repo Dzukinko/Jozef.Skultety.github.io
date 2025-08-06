@@ -4152,3 +4152,50 @@ body {
 		gap: 0.5em;
 		width: max-content; /* Shrinks to fit content */
 	}
+		#footer .contact-icons a {
+			border-bottom: none !important;
+			text-decoration: none;
+			color: #ffffff;
+		}
+			#footer .contact-icons a:hover {
+				text-decoration: underline;
+				color: #f0f0f0;
+			}
+
+.copy-email {
+	cursor: pointer;
+	border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
+	transition: border-color 0.3s;
+}
+
+	.copy-email:hover {
+		border-bottom: 1px dashed #fff;
+	}
+
+/* Tooltip style */
+.copy-email {
+	position: relative;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+	.copy-email::after {
+		content: attr(data-tooltip);
+		position: absolute;
+		bottom: 125%;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #333;
+		color: #fff;
+		padding: 4px 8px;
+		border-radius: 4px;
+		font-size: 0.75em;
+		opacity: 0;
+		white-space: nowrap;
+		pointer-events: none;
+		transition: opacity 0.3s;
+	}
+
+	.copy-email:hover::after {
+		opacity: 1;
+	}

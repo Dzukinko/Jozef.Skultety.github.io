@@ -93,7 +93,7 @@
 								<p>Feel free to reach out or connect with me on the platforms below:</p>
 								<ul class="contact-icons">
 									<li class="icon solid fa-envelope">
-										Jskutlety2@gmail.com
+										<a href="#" id="email" class="copy-email" data-tooltip="Copy to clipboard">Jskutlety2@gmail.com</a>
 									</li>
 									<li class="icon brands fa-linkedin">
 										<a href="https://www.linkedin.com/in/jozef-skultety-52a82b2b0" target="_blank">linkedin.com/in/jozefskultety</a>
@@ -112,6 +112,21 @@
 						<script src="assets/js/breakpoints.min.js"></script>
 						<script src="assets/js/util.js"></script>
 						<script src="assets/js/main.js"></script>
+						<script>
+							document.addEventListener("DOMContentLoaded", function () {
+								const emailLink = document.getElementById("email");
 
+								emailLink.addEventListener("click", function (e) {
+									e.preventDefault();
+									const originalTooltip = emailLink.getAttribute("data-tooltip");
+									navigator.clipboard.writeText(emailLink.textContent).then(() => {
+										emailLink.setAttribute("data-tooltip", "Copied!");
+										setTimeout(() => {
+											emailLink.setAttribute("data-tooltip", originalTooltip);
+										}, 1500);
+									});
+								});
+							});
+						</script>
 </body>
 </html>
